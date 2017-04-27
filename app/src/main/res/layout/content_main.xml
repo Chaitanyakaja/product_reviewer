@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="alienware.projectapplication.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="294dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/barcode" />
+
+                    <Button
+                        android:id="@+id/barcode_scan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="barcode"
+                        android:text="Barcode"
+                        tools:layout_editor_absoluteX="135dp"
+                        tools:layout_editor_absoluteY="54dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    > </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="bottom"
+                        android:background="#00000000"
+                        android:scaleType="centerInside"
+                        android:src="@android:drawable/ic_menu_zoom"
+                        tools:layout_editor_absoluteX="57dp"
+                        tools:layout_editor_absoluteY="137dp" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Searching for?"
+                        tools:layout_editor_absoluteX="135dp"
+                        tools:layout_editor_absoluteY="146dp" />
+                    <!--Delete the Text line, Because its always appears when you are trying to text -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="284dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_menu_camera"
+                        tools:layout_editor_absoluteX="57dp"
+                        tools:layout_editor_absoluteY="230dp"
+                        android:layout_centerHorizontal="true"/>
+                    <Button
+                        android:id="@+id/Image_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Image Search"
+                        tools:layout_editor_absoluteX="135dp"
+                        tools:layout_editor_absoluteY="231dp"
+                        android:layout_centerHorizontal="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+                <Button
+                    android:id="@+id/productdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="productdetail"
+                    android:text="Test for Product Detail Page"
+                    tools:layout_editor_absoluteX="135dp"
+                    tools:layout_editor_absoluteY="54dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            ></LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
